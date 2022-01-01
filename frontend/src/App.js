@@ -11,20 +11,28 @@ import Services from "./components/Services";
 
 function App() {
 
-  const [approach, setApproach] = useState([]);
+  const [userData, setUserData]     = useState()
+  const [approaches, setApproaches] = useState([])
+  const [services, setServices]     = useState([])
+  const [clients, setClients]       = useState([])
 
   useEffect(() => {
-    const requestOne = axios.get('http://localhost:1337/approaches?_locale=fr');
-    const requestTwo = axios.get('http://localhost:1337/approaches?_locale=fr');
-    const requestThree = axios.get('http://localhost:1337/approaches?_locale=fr');
+    const requestOne    = axios.get('https://aniebackend.herokuapp.com/user-information');
+    const requestTwo    = axios.get('https://aniebackend.herokuapp.com/approaches?_locale=en');
+    const requestThree  = axios.get('http://aniebackend.herokuapp.com/approaches?_locale=en');
+    const requestFour   = axios.get('http://aniebackend.herokuapp.com/approaches?_locale=en');
     
-    axios.all([requestOne, requestTwo, requestThree]).then(axios.spread((...responses) => {
-      const responseOne = responses[0].data
-      const responseTwo = responses[1].data
+    axios.all([requestOne, requestTwo, requestThree, requestFour]).then(axios.spread((...responses) => {
+      const responseOne   = responses[0]
+      const responseTwo   = responses[1].data
       const responesThree = responses[2].data
-      // use/access the results 
+      const responesFour  = responses[3].data
 
-      setApproach([...responseOne])
+      // use/access the results 
+      setUserData(responseOne)
+      setApproaches([...responseTwo])
+      setServices([...responesThree])
+      setClients([...responesFour])
 
     })).catch(errors => {
       // react on errors.
@@ -34,7 +42,7 @@ function App() {
   
   return (
     <div className="container-fluid p-0">
-      {/* <code>{JSON.stringify(data)}</code> */}
+      <code>{JSON.stringify(userData)}</code>
       <Header />
       <Jumbotron />
       <Services />

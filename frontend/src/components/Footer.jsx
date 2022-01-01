@@ -6,7 +6,7 @@ function Footer() {
             <footer className="blog-footer">
                 <p>Made with ❤️ by <a href="https://www.linkedin.com/in/amaninders/">@amaninder</a>.</p>
                 <p>
-                  <a href="#" className='btn btn-outline-dark'>Back to top</a>
+                  <a href="#" className='btn btn-dark'>Back to top</a>
                 </p>
             </footer>
         </div>
