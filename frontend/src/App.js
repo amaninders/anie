@@ -1,8 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Approach from "./components/Approach";
+import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Jumbotron from "./components/Jumbotron";
+import Resources from "./components/Resources";
+import Services from "./components/Services";
 
 
 function App() {
@@ -29,10 +33,14 @@ function App() {
   }, []);
   
   return (
-    <div className="container-fluid custom">
+    <div className="container-fluid p-0">
       {/* <code>{JSON.stringify(data)}</code> */}
       <Header />
-      <Hero />
+      <Jumbotron />
+      <Services />
+      <Approach />
+      <Clients />
+      <Resources />
       <Footer />
     </div>
   );
