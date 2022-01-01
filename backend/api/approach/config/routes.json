@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/approaches",
+      "handler": "approach.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/approaches/count",
+      "handler": "approach.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/approaches/:id",
+      "handler": "approach.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/approaches",
+      "handler": "approach.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/approaches/:id",
+      "handler": "approach.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/approaches/:id",
+      "handler": "approach.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
