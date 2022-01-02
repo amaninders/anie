@@ -15,13 +15,14 @@
     "@strapi/plugin-users-permissions": "4.0.2",
     "@strapi/strapi": "4.0.2",
     "pg": "^8.7.1",
-    "pg-connection-string": "^2.5.0"
+    "pg-connection-string": "^2.5.0",
+    "sqlite3": "5.0.2"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "fbdb92d9-788c-4046-984d-605e1655c4d9"
+    "uuid": "4bb32ed4-9a1a-424c-8718-2c4729fee293"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
