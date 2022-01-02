@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approaches",
+  "info": {
+    "singularName": "approach",
+    "pluralName": "approaches",
+    "displayName": "approaches"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
