@@ -4,7 +4,8 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "services"
+    "displayName": "services",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,14 +18,8 @@
     "description": {
       "type": "text"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "type": "media",
-      "multiple": false
+    "image_url": {
+      "type": "string"
     }
   }
 }

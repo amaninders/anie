@@ -4,7 +4,8 @@
   "info": {
     "singularName": "client",
     "pluralName": "clients",
-    "displayName": "clients"
+    "displayName": "clients",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,14 +18,8 @@
     "feedback": {
       "type": "text"
     },
-    "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "type": "media",
-      "multiple": false
+    "icon_url": {
+      "type": "string"
     }
   }
 }
