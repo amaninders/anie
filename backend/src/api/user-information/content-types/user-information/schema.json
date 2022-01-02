@@ -21,9 +21,6 @@
     "email": {
       "type": "email"
     },
-    "logo_url": {
-      "type": "string"
-    },
     "cover_url": {
       "type": "string"
     }
